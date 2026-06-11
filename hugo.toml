@@ -77,7 +77,7 @@ pagination.pagerSize = 5
     title = "Toni Eris"
 
     [languages.en.params]
-      subtitle = "A simple, retro theme for Hugo"
+      subtitle = "A man is like a novel: until the very last page you don't know how it will end."
       owner = ""
       keywords = ""
       copyright = ""
