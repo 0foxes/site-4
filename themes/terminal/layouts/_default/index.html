@@ -1,9 +1,14 @@
 {{ define "main" }}
   {{ if .Content }}
+   
     <div class="index-content {{ if .Params.framed -}}framed{{- end -}}">
+      <h1 class="post-title">
+        <a href="{{ .Permalink }}">{{ .Title | markdownify }}<span class="blinking">_</span></a>
+      </h1>
       {{ .Content }}
     </div>
   {{ end }}
+  <!--
   <div class="posts">
     {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
     {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
@@ -63,4 +68,5 @@
 
     {{ partial "pagination.html" . }}
   </div>
+  -->
 {{ end }}
