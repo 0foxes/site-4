@@ -3,3 +3,18 @@
   --foreground: #ffffff;
   --accent: #6a5acd;
 }
+
+.blinking {
+  animation: 2s underscoreblink step-end infinite;
+}
+
+@keyframes underscoreblink {
+  50% {
+    opacity: 0;
+  }
+}
+
+table tr th:empty {
+  display: none;
+}
+  
