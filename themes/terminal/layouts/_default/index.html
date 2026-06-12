@@ -3,7 +3,7 @@
    
     <div class="index-content {{ if .Params.framed -}}framed{{- end -}}">
       <h1 class="post-title">
-        <a href="{{ .Permalink }}">{{ .Title | markdownify }}<span class="blinking">_</span></a>
+        {{ .Title | markdownify }}<span class="blinking">_</span>
       </h1>
       {{ .Content }}
     </div>
